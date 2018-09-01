@@ -6,6 +6,14 @@ body {
   background-color: #eee;
 }
 
+:root {
+  --green: #00bcd4;
+  --blue: rgb(0, 40, 86);
+  --gray: #999;
+  --white: #fff;
+}
+
+
 ul {
   margin: 0;
   padding: 0;
@@ -21,7 +29,7 @@ a {
 }
 
 a:hover {
-  color: #999;
+  color: var(--gray);
   text-decoration: none;
 }
 
@@ -39,7 +47,7 @@ a:hover {
 
 /* Main css */
 .header {
-  background: rgb(81, 45, 168);
+  background: var(--green);
   padding: 40px 0 150px 0;
   display: flex;
   justify-content: space-around;
@@ -61,7 +69,7 @@ a:hover {
 }
 
 .fas {
-  color: rgb(0, 40, 86);
+  color: var(--blue);
   padding: 4px 10px 0 0;
   font-size: 16px;
 }
@@ -88,21 +96,21 @@ a:hover {
 
 .box {
   margin-top: -100px;
-  box-shadow: 1px 5px 10px #999;
-  background-color: #fff;
+  box-shadow: 1px 5px 10px var(--gray);
+  background-color: var(--white);
   padding: 20px;
   margin-bottom: 60px;
 }
 
 .content-title {
-  color: #4db6ac;
+  color: var(--green);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
 }
 
 .side-details a {
-  color: rgb(0, 40, 86);
+  color: var(--blue);
 }
 
 .social-icons {
@@ -142,7 +150,7 @@ a:hover {
   letter-spacing: 2px;
   margin: 5px 0;
   margin-left: 40px;
-  background-color: #00bcd4;
+  background-color: var(--green);
   border: none;
   border-radius: 25px;
 }
